@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ReactECharts from 'echarts-for-react';
+import Chart01 from './components/Chart01';
+import Chart02 from './components/Chart02';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Chart01 />
+      <hr />
+      <Chart02 />
     </div>
   );
 }
-
 export default App;
